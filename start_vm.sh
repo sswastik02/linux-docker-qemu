@@ -1,7 +1,8 @@
 #!/bin/bash
 
+LINUX_MAINLINE_SRC_PATH=$PWD/../../linux_mainline
 # Copy bzimage to cwd
-cp ../../linux_mainline/arch/x86_64/boot/bzImage .
+cp $LINUX_MAINLINE_SRC_PATH/arch/x86_64/boot/bzImage .
 # Start VM
 qemu-system-x86_64 \
   -kernel bzImage \

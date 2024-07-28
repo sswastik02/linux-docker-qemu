@@ -1,9 +1,10 @@
 #!/bin/bash
 
+LINUX_MAINLINE_SRC_PATH=$PWD/../../linux_mainline
 LKM=${LKM:=helloworld}
 ./compile_lkm.sh
 sudo mount ./rootfs.img /mnt
-sudo cp ../../linux_mainline/$LKM/$LKM.ko /mnt
+sudo cp $LINUX_MAINLINE_SRC_PATH/$LKM/$LKM.ko /mnt
 
 sudo umount /mnt
 echo -e "\nLKM setup complete"

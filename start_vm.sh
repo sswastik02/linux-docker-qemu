@@ -1,6 +1,5 @@
 #!/bin/bash
 
-_PATH=$PWD/../../linux_mainline
 # Copy bzimage to cwd
 cp $LINUX_KERNEL_PATH/arch/x86_64/boot/bzImage .
 # Start VM

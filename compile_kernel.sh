@@ -1,6 +1,5 @@
 #!/bin/bash
 
-_PATH=$PWD/../../linux_mainline
 CORES=$(nproc)
 cp .config $LINUX_KERNEL_PATH 
 docker build -t devcontainer .
